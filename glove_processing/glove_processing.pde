@@ -120,7 +120,12 @@ void draw() {
   drawChart(gy2Arr, "MPU2: Gyro  Y", 230, 350, allScale, allScale);
   drawChart(gz2Arr, "MPU2: Gyro  Z", 460, 350, allScale, allScale);
   
-  drawChartAngle(angleArr, "Motor Angle:", 550, 460, allScale+0.5, allScale+0.5);
+  drawChartAngle(angleArr, "Angle:", 550, 460, allScale+0.5, allScale+0.5);
+  
+  // draw angle
+  fill(deepBlue);
+  textSize(50);
+  text(angle, 860, 580);
   
   drawCircle(f1, "Index finger", 20, 490, circleScale, circleScale);
   drawCircle(f2, "Middle finger", 150, 490, circleScale, circleScale);
